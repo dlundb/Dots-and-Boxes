@@ -1,34 +1,41 @@
-# Dots-and-Boxes
+README.md of CS437Final_LundbergDanny.py
 
+(forked from https://github.com/aqeelanwar/Dots-and-Boxes as 
+a starting point; my additions include a simple AI, and user 
+choice to play against up to 3 other players instead of just
+a 1v1 hot seat game)
 
-This repository contains python based interactive Dots-and-Boxes game.
+Installations required:
+ - Python 3.8+
+ - python module numpy
+ - python module tkinter
 
-## Running Dots-and-Boxes:
+To execute, cd to directory with CS437Final_LundbergDanny.py, 
+then execute with `python CS437Final_LundbergDanny.py` in 
+terminal or your favorite editor.
 
-```
-git clone https://github.com/aqeelanwar/Dots-and-Boxes.git
-cd Dots-and-Boxes
-python main.py
-```
+The game is intended for a minimum of 2 players, and a maximum 
+of 4. The size of the board can be picked at the beginning, 
+(smaller boards take less time to complete while larger boards 
+take longer). The user can also choose to play against AI or 
+his fellow humans. If the user wants to play against AI, all 
+other players besides player 1 will be AI. In the future I'd 
+like to modify this to pick how many humans/AI the user 
+wants, and have the user be able to play with a mix (2 humans 
+versus 2 AI's for example).
 
-<p align="center">
-<img src="/images/preview.gif">
-</p>
+The goal of the game is to make as many boxes between the dots 
+as possible. One by one, the players place lines between dots. 
+If the line completes a square, the player who placed the line 
+captures the completed box and gets to take another turn. The 
+game ends when all boxes have been taken.
 
-## Screenshots
-<p align="center">
-<img width=1000 src="/images/screenshot.png">
-
-</p>
-
-## Controls
-1. Player 1 starts the game
-2. Click on edges to mark them
-3. If a box is made, it gets shaded with the player assigned color
-4. When all the edges are marked, the result is displayed on the result screen
-5. Click anywhere on the result screen to play again
-
-
-
-## Author
-[Aqeel Anwar](https://www.prism.gatech.edu/~manwar8)
+The AI is relatively simple: it prefers to capture any boxes 
+that are 1 line away from being complete; if a move of this 
+type does not exist then it prefers to make a second line on 
+any box that only has a single line so far. If no such box 
+exists, it will place a line on any other box. In the future 
+I would like to modify this to add some randomness; at the 
+moment it simply takes the first row available that does not 
+put itself at a disadvantage, if no rows are available it 
+takes a column with the least disadvantage. 
