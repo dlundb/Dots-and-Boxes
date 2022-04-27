@@ -65,7 +65,6 @@ class Dots_Boxes_App(tk.Tk):
         self.geometry('%dx%d+%d+%d' % (self.SETUP_SIZE, self.SETUP_SIZE, self.SETUP_OFFSET, self.SETUP_OFFSET))
         self.canvas = tk.Canvas(self, width=self.SETUP_SIZE, height=self.SETUP_SIZE)
         self.canvas.pack()
-        self.bind("<Button-1>", self.click_setup)
         self.setup_game()
 
 
@@ -379,8 +378,7 @@ class Dots_Boxes_App(tk.Tk):
         self.board_size = DEFAULT_BOARD_SIZE
         self.num_dots = DEFAULT_NUM_DOTS
         self.num_players = DEFAULT_NUM_PLAYERS
-        #made this bind before coming to setup_game()
-        #self.bind('<Button-1>', self.click_setup)
+        self.bind('<Button-1>', self.click_setup)
         self.canvas.create_text(250, 50, anchor="c", text="Dots and Boxes Game", font=('arial', 20, 'bold'))
         self.canvas.create_rectangle(180, 75, 320, 125, fill='white')
         self.canvas.create_text(250, 100, anchor="c", text="How to Play", font=('arial', 14))
