@@ -36,15 +36,13 @@ take longer). The user can also choose to play against AI or
 his fellow humans. If the user wants to play against AI, all 
 other players besides player 1 will be AI. 
 
-!["Game selection screen"](~./images/selectionscreen.PNG "Game selection screen for Dots-and-Boxes showing the various options to play from.")
+!["Game selection screen"](/images/selectionscreen.PNG "Game selection screen for Dots-and-Boxes showing the various options to play from.")
 
-!["2 by 2, 2-player board"](~./images/2by2.PNG "2x2 square board with two human players, before Player 1 takes a turn")
+!["2 by 2, 2-player board"](/images/2by2.PNG "2x2 square board with two human players, before Player 1 takes a turn")
 
-!["4 by 4, 3-player board"](~./images/4by4.PNG "4x4 square board with three human players, at a point where no move can be made that does not place a third side on a box, allowing Player 1 to score first")
+!["4 by 4, 3-player board"](/images/4by4.PNG "4x4 square board with three human players, at a point where no move can be made that does not place a third side on a box, allowing Player 1 to score first")
 
-!["6 by 6, 4-player board"](~./images/6by6.PNG "6x6 square board with three AI players, and one human player. Board shows how AI will attempt to close any box that has 3 sides, then will try to place where the AI is only putting down the second side over the third side.")
-
-!["Title"](~./images/name.PNG "Desc")
+!["6 by 6, 4-player board"](/images/6by6.PNG "6x6 square board with three AI players, and one human player. Board shows how AI will attempt to close any box that has 3 sides, then will try to place where the AI is only putting down the second side over the third side.")
 
 The AI is relatively simple: it prefers to capture any boxes 
 that are 1 line away from being complete; if a move of this 
@@ -56,7 +54,7 @@ moment it simply takes the first horizontal row available that
 does not put itself at a disadvantage, if no rows are available 
 it takes a column with the least disadvantage.
 
-!["Simple AI play in Dots-and-Boxes"](~./images/sillyAI.PNG "Demonstration of how the AI is arguably 'boring' right now; it's logic attempts to ideally place the fourth, second, first, and finally third line on the last observed box where the best of those positions is possible. In this example, the AI's continually sought out to place the second line on each box, since the fourth was not immediately available.")
+!["Simple AI play in Dots-and-Boxes"](/images/sillyAI.PNG "Demonstration of how the AI is arguably 'boring' right now; it's logic attempts to ideally place the fourth, second, first, and finally third line on the last observed box where the best of those positions is possible. In this example, the AI's continually sought out to place the second line on each box, since the fourth was not immediately available.")
 
 ---
 
